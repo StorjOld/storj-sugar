@@ -1,0 +1,47 @@
+{
+  "name": "storj-contrib",
+  "version": "0.1.0",
+  "description": "Storj helper methods and Syntactic sugar",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib",
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "npm run testsuite && npm run linter",
+    "testsuite": "STORJ_ALLOW_LOOPBACK=1 ./node_modules/.bin/mocha test/** --recursive",
+    "coverage": "STORJ_ALLOW_LOOPBACK=1 ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive",
+    "linter": "./node_modules/.bin/jshint --config .jshintrc ./index.js ./lib ./test",
+    "make-docs": "mkdir -p ./jsdoc && rm -r ./jsdoc && ./node_modules/.bin/jsdoc index.js lib -r -R README.md -u ./doc -c .jsdoc.json --verbose -d ./jsdoc && cp -r doc/assets jsdoc/assets",
+    "publish-docs": "npm run make-docs && node script/publishdoc.js"
+  },
+  "keywords": [
+    "storj",
+    "contrib",
+    "p2p"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storj/storj-contrib.git"
+  },
+  "author": "Philip Hutchins <flipture@gmail.com>",
+  "contributors": [],
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": "^4.4.4"
+  },
+  "dependencies": {
+    "storj": "^3.2.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "jsdoc": "^3.4.0",
+    "jshint": "2.8.0",
+    "mocha": "^2.2.4",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.14.1"
+  }
+}
