@@ -1,5 +1,5 @@
 /**
- * @module storj-contrib
+ * @module storj-sugar
  */
 
 'use strict';
