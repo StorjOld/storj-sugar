@@ -1,5 +1,5 @@
 {
-  "name": "storj-contrib",
+  "name": "storj-sugar",
   "version": "0.1.0",
   "description": "Storj helper methods and Syntactic sugar",
   "main": "index.js",
@@ -18,12 +18,12 @@
   },
   "keywords": [
     "storj",
-    "contrib",
+    "sugar",
     "p2p"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storj/storj-contrib.git"
+    "url": "https://github.com/storj/storj-sugar.git"
   },
   "author": "Philip Hutchins <flipture@gmail.com>",
   "contributors": [],
@@ -32,6 +32,7 @@
     "node": "^4.4.4"
   },
   "dependencies": {
+    "mime-types": "^2.1.12",
     "storj": "^3.2.0"
   },
   "devDependencies": {
