@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "mime-types": "^2.1.12",
-    "storj": "^3.2.0"
+    "storj": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
