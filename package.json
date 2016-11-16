@@ -1,6 +1,6 @@
 {
   "name": "storj-sugar",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Storj helper methods and Syntactic sugar",
   "main": "index.js",
   "directories": {
